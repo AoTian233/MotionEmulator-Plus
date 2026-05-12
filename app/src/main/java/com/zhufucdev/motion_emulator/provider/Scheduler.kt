@@ -86,7 +86,7 @@ object Scheduler {
         }
         val prefs = context.sharedPreferences()
         port = prefs.getString("provider_port", "")!!.toIntOrNull() ?: 20230
-        tls = prefs.getBoolean("provider_tls", true)
+        tls = prefs.getBoolean("provider_tls", false)
         server = embeddedServer(Netty, applicationEngineEnvironment {
             if (tls) {
                 configureSsl(port)
