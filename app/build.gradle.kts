@@ -112,7 +112,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.kotlin.reflect)
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation(libs.redempt.crunch)
     implementation(libs.google.guava)
     implementation(libs.aventrix.jnanoid)
     implementation(libs.apache.commons.compress)
