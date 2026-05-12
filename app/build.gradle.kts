@@ -59,6 +59,15 @@ android {
     }
 }
 
+configurations.all {
+    resolutionStrategy {
+        dependencySubstitution {
+            substitute(module("com.github.Redempt:Crunch"))
+                .using(module("com.github.boxbeam:Crunch:1.1.2"))
+        }
+    }
+}
+
 dependencies {
     // Internal
     implementation(libs.sdk)
