@@ -31,7 +31,7 @@ gmaps = "3.2.1"
 mapsUtils = "3.4.0"
 spongycastle = "1.58.0.0"
 
-stub = "1.1.3"
+stub = "1.1.2"
 update = "1.0.0"
 sdk = "1.0.0"
 
